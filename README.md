@@ -25,7 +25,7 @@ const ClientSchema = extendSchema(UserSchema, {
 ```javascript
 
 const mongoose = require('mongoose');
-const extendSchema = require('./mongoose-extend-schema');
+const extendSchema = require('mongoose-extend-schema');
 
 const UserSchema = new mongoose.Schema({
   email: {type: String, unique: true, required: true},
