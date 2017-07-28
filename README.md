@@ -1,6 +1,8 @@
-# mongoose-extend-schema
+# Mongoose schema inheritance
 
-Extends mongoose schema
+This npm module extends mongoose schema (returning new one)
+
+NOT ~~mongoose-schema-extend~~ but **mongoose-extend-schema**
 
 ### Installation
 ```sh
