@@ -1,0 +1,11 @@
+# Dependency directory
+node_modules/
+
+# JetBrains IntelliJ IDEA IDE (WebStorm)
+\.idea/
+
+# Hidden files
+\.hidden
+
+# Package zip-file
+mongoose-extend-schema\.zip
