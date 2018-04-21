@@ -1,6 +1,6 @@
 # Mongoose schema inheritance
 
-This npm module extends mongoose schema (returning new one)
+This npm module extends mongoose schema (returning new one) modified to use ES6 transpiled extends
 
 NOT ~~mongoose-schema-extend~~ but **mongoose-extend-schema**
 
@@ -84,4 +84,4 @@ module.exports = extendSchema;
 
 Author
 ----
-@doasync
+@thxmike
