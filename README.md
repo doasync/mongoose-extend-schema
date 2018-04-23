@@ -6,7 +6,7 @@ NOT ~~mongoose-schema-extend~~ but **mongoose-extend-schema**
 
 ### Installation
 ```sh
-$ npm i --save mongoose-extend-schema
+$ npm install thxmike/mongoose-extend-schema --save
 ```
 
 ### Usage
