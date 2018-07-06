@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 function extendSchema(parent, child, options, injected_mongoose) {
   let updated_schema = Object.assign({}, parent.obj, child);
-  if (ex_mongoose){
+  if (injected_mongoose){
     this._mongoose = injected_mongoose;
   } else {
     this._mongoose = mongoose;
