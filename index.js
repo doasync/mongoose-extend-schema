@@ -1,8 +1,13 @@
 const mongoose = require("mongoose");
 
-function extendSchema(parent, child, options) {
+function extendSchema(parent, child, options, injected_mongoose) {
   let updated_schema = Object.assign({}, parent.obj, child);
-  let updated_child_object = new mongoose.Schema(updated_schema, options);
+  if (ex_mongoose){
+    this._mongoose = injected_mongoose;
+  } else {
+    this._mongoose = mongoose;
+  }
+  let updated_child_object = new this._mongoose.Schema(updated_schema, options);
   __extends(updated_child_object, parent);
   return updated_child_object;
 }
